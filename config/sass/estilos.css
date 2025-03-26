@@ -201,7 +201,7 @@ header .menu .menu__list .menu__item a:hover {
   width: 100%;
   margin: auto;
   height: 100dvh;
-  max-height: 600px;
+  max-height: 800px;
   overflow: hidden;
   position: relative;
 }
