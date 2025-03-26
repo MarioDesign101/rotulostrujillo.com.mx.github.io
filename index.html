@@ -23,7 +23,7 @@
         <meta property="og:title" content="Rotulos Trujillo | Cada momento, clientes satisfechos"> <!-- Atributos title, description y url y type || título de tu página o tu post-->
         <meta property="og:description" content="En Rotulos Trujillo ofrecemos servicios de publicidad de la más alta calidad como lonas impresas, vinil impreso, volantes, tarjetas, tarjetas de presentación, etc.">
         <meta property="og:url" content="https://www.rotulostrujillo.com.mx">
-        <meta property="og:image" content="https://www.rotulostrujillo.com.mx/config/img/rotulos_trujillo_logotipo.webp">
+        <meta property="og:image" content="https://www.rotulostrujillo.com.mx/config/img/rotulos_trujillo_logotipo_medium.png">
         <meta property="og:video" content="">
         <meta property="og:site_name" content="Rotulos Trujillo | En cada momento clientes satisfechos">
         <!-- Open Graph data -->
@@ -47,196 +47,200 @@
         <meta itemprop="description" content="En Rotulos Trujillo ofrecemos servicios de publicidad de la más alta calidad como lonas impresas, vinil impreso, volantes, tarjetas, tarjetas de presentación, etc.">
         <!-- https://support.google.com/webmasters/answer/9008080?hl=es#html_verification -->
             <!-- itemprop -->
-        <link rel="icon" href="config/img/rotulos_trujillo_logotipo_small.webp" type="image/x-icon">
+        <link rel="icon" href="config/img/rotulos_trujillo_logotipo_medium.png" type="image/x-icon">
         <link rel="canonical" href="https://www.rotulostrujillo.com.mx"> <!--ENLACE OPCIONAL-->
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- <base href="https://www.mariodev.com/"> -->
+        <link rel="stylesheet" href="config/sass/estilos.css">
+        <link rel="stylesheet" href="config/sass/normalize.css">
         <title>Rotulos Trujillo | En cada momento clientes satisfechos</title>
         <!-- <base href="https://www.rotulostrujillo.com.mx/"> -->
     </head>
 <body>
     <header class="contenedor">
         <div class="logo">
-            <a href=""><img src="config/img/rotulos_trujillo_logotipo_small.webp" alt="Rotulos Trujillo | En cada momento clientes satisfechos" loading="lazy"></a>
+            <a href=""><img src="config/img/rotulos_trujillo_logotipo_medium.png" alt="Rotulos Trujillo | En cada momento clientes satisfechos" loading="lazy"></a>
         </div>
-        <nav class="menu">
+        <div class="icon-menu" id="icon-menu" onclick="toggleMenu();"><i class="fa-solid fa-bars"></i></div>
+        <nav class="menu" id="menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#home">Inicio</a>
+                    <a href="#home" onclick="toggleMenu();">Inicio</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#service">Servicios</a>
+                    <a href="#service" onclick="toggleMenu();">Servicios</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#gallery">Galería</a>
+                    <a href="#gallery" onclick="toggleMenu();">Galería</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#aboutUs">Conocenos</a>
+                    <a href="#aboutUs" onclick="toggleMenu();">Conocenos</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#contact">Contacto</a>
+                    <a href="#contact" onclick="toggleMenu();">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="contenedor">
+        <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i> </div>
         <section class="home" id="home">
             <div class="banner">
                 <div class="banner__img">
                     <img src="config/img/inicio_small.webp" alt="Rotulos Trujillo - Servicios de impresión de alta calidad" loading="lazy">
                     <div class="banner__img--txt">
-                        <h1 class="max-titulo">Rótulos Trujillo</h1>
+                        <h1 class="max-titulo"><span>Rótulos</span> Trujillo</h1>
                         <h2 class="titulo">Impresión de calidad en todos nuestros servicios.</h2>
                         <a href=""><i class="fa-brands fa-whatsapp"></i> Mandanos un mensaje</a>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- hasta aquí voy -->
         <section class="service" id="service">
             <h2 class="titulo">Conoce nuestros servicios.</h2>
             <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, est? Deserunt mollitia aperiam nam, rem aut vero! Libero saepe, dignissimos, laborum tempora accusamus a aliquid labore placeat nam quasi quis.</p>
             <div class="service__contenedor">
                 <article class="service--item">
-                    <img src="config/img/service/1/principal.webp" alt="">
+                    <img src="config/img/service/1/principal.webp" alt="Rotulos Trujillo - servicios de stickers" loading="lazy">
                     <h3 class="sub-titulo">Stickers</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore mollitia esse labore sequi.</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/2/principal.webp" alt="">
+                    <img src="config/img/service/2/principal.webp" alt="Rotulos Trujillo - servicios de recorte de vinil" loading="lazy">
                     <h3 class="sub-titulo">Recorte de Vinil</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/3/principal.webp" alt="">
+                    <img src="config/img/service/3/principal.webp" alt="Rotulos Trujillo - servicios de vinil impreso" loading="lazy">
                     <h3 class="sub-titulo">Vinil Impreso</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/4/principal.webp" alt="">
+                    <img src="config/img/service/4/principal.webp" alt="Rotulos Trujillo - servicios de impresión en telas" loading="lazy">
                     <h3 class="sub-titulo">Telas</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/5/principal.webp" alt="">
+                    <img src="config/img/service/5/principal.webp" alt="Rotulos Trujillo - servicios de impresión en lona" loading="lazy">
                     <h3 class="sub-titulo">Lona Impresa</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/6/principal.webp" alt="">
+                    <img src="config/img/service/6/principal.webp" alt="Rotulos Trujillo - servicios de toldos" loading="lazy">
                     <h3 class="sub-titulo">Toldos</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/7/principal.webp" alt="">
+                    <img src="config/img/service/7/principal.webp" alt="Rotulos Trujillo - servicios de rotulero luminoso" loading="lazy">
                     <h3 class="sub-titulo">Luminosos</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/8/principal.webp" alt="">
+                    <img src="config/img/service/8/principal.webp" alt="Rotulos Trujillo - servicios de volantes" loading="lazy">
                     <h3 class="sub-titulo">Volantes</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/9/principal.webp" alt="">
+                    <img src="config/img/service/9/principal.webp" alt="Rotulos Trujillo - servicios de tarjetas de presentación" loading="lazy">
                     <h3 class="sub-titulo">Tarjetas</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/10/principal.webp" alt="">
+                    <img src="config/img/service/10/principal.webp" alt="Rotulos Trujillo - servicios de impresión en playeras" loading="lazy">
                     <h3 class="sub-titulo">Playeras</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/11/principal.webp" alt="">
+                    <img src="config/img/service/11/principal.webp" alt="Rotulos Trujillo - servicios de impresión en sudaderas" loading="lazy">
                     <h3 class="sub-titulo">Sudaderas</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/12/principal.webp" alt="">
+                    <img src="config/img/service/12/principal.webp" alt="Rotulos Trujillo - servicios de banners" loading="lazy">
                     <h3 class="sub-titulo">Banners</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
                 <article class="service--item">
-                    <img src="config/img/service/13/principal.webp" alt="">
+                    <img src="config/img/service/13/principal.webp" alt="Rotulos Trujillo - servicios de roll up" loading="lazy">
                     <h3 class="sub-titulo">Roll Up</h3>
                     <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem incidunt fugiat placeat!</p>
-                    <a href="">Solicitar Servicio</a>
+                    <a href="service_consult/">Solicitar Servicio</a>
                 </article>
             </div>
         </section>
+        <!-- hasta aquí voy -->
         <section class="gallery" id="gallery">
             <h2 class="titulo">Conoce algunos de nuestros trabajos</h2>
             <div class="gallery__container">
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="">
+                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
                         <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
                     </figure>
                 </div>
@@ -247,33 +251,40 @@
             <div class="aboutUs__presentation">
                 <div class="presentation__item">
                     <div class="presentation__item--img">
-                        <img src="" alt="Rotulos Trujillo - Conoce nuestros mejores servicios en rotulado" loading="lazy">
+                        <img src="config/img/rotulista.webp" alt="Rotulos Trujillo - Conoce nuestros mejores servicios en rotulado" loading="lazy">
                     </div>
                     <div class="presentation__item--txt">
-                        <h3></h3>
-                        <p class="texto"></p>
-                        <a href=""></a>
+                        <h3 class="sub-titulo">¿Quienes somos?</h3>
+                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aperiam ratione quae exercitationem libero, omnis accusantium doloribus, dolore architecto voluptatum labore magnam ullam voluptatibus cupiditate ipsam expedita ipsa asperiores similique!</p>
+                        <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam tempora maxime distinctio, commodi delectus, sapiente, blanditiis suscipit provident ipsa fugit molestias ut dolor perspiciatis! Dolorum ut inventore ex suscipit animi.</p>
                     </div>
                 </div>
                 <div class="presentation__item">
                     <div class="presentation__item--txt">
-                        <h3></h3>
-                        <p class="texto"></p>
-                        <a href=""></a>
+                        <h3 class="sub-titulo">Porque elegirnos</h3>
+                        <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eaque fuga inventore, nostrum illum tempore sint corrupti mollitia accusamus officiis accusantium impedit. Nam maiores illum officiis quod ullam est illo.</p>
+                        <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quia quibusdam, minima quidem suscipit corporis. Voluptates veritatis, vitae cumque, porro laboriosam accusantium beatae dolorum sequi in ut laborum omnis sapiente?</p>
+                        <a href="">Solicitar servicios</a>
                     </div>
                     <div class="presentation__item--img">
-                        <img src="" alt="Rotulos Trujillo - Conoce nuestros mejores servicios en rotulado" loading="lazy">
+                        <img src="config/img/funciones_rotulista.webp" alt="Rotulos Trujillo - Conoce nuestros mejores servicios en rotulado" loading="lazy">
                     </div>
                 </div>
             </div>
 
             <div class="aboutUs__video">
                 <div class="video">
-                    <video src=""></video>
+                    <video src="config/video/99940-654330952_small.mp4" type="video/mp4" controls muted>
+                        <source src="config/video/99940-654330952_small.mkv" type="video/mkv">
+                        <source src="config/video/99940-654330952_small.avi" type="video/avi">
+                        <div class="texto">Este video no lo soporta tu dispositivo</div>
+                    </video>
                 </div>
+
                 <div class="aboutUs__video--txt">
-                    <h3></h3>
-                    <p class="texto"></p>
+                    <h3 class="sub-titulo">Servicios de la más alta calidad</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nesciunt expedita eligendi dolor consequuntur. Ducimus perspiciatis quo perferendis magnam vitae quod quis. Tenetur iusto sint pariatur provident nostrum recusandae nobis.</p>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laborum soluta illo et necessitatibus rerum consequuntur harum debitis corrupti qui officia illum dolor totam dicta nemo, ad maxime placeat similique?</p>
                 </div>
             </div>
 
@@ -281,93 +292,110 @@
                 <div class="opinions__container">
                     <div class="opinions__slider">
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/1/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/2/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/3/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/4/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/5/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                         <article class="slider__item">
-                            <div class="slider__item--img"></div>
+                            <div class="slider__item--img">
+                                <img src="config/img/personal/6/principal.webp" loading="lazy" alt="Rotulos Trujillo - Servicios de calidad">
+                            </div>
                             <div class="slider__item--txt">
-                                <h3 class="sub-titulo"></h3>
-                                <p class="texto"></p>
+                                <h3 class="sub-titulo">"...Aquí va una opinion"</h3>
+                                <p class="texto"><cite>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aliquam assumenda et eveniet laudantium dignissimos dicta dolorem natus quae mollitia. Autem accusantium repellendus, incidunt nisi deleniti totam iusto ab, amet consequuntur est voluptatem deserunt corporis ullam animi eius impedit sapiente.</cite></p>
+                                <cite>- Jorge -</cite>
                                 <div class="slider__item--calification">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="contact" id="contact">
             <h2 class="titulo">Contactanos</h2>
@@ -379,22 +407,22 @@
                     <span class="contact__social"> 66-666-666</span>
                     <span class="contact__social">contacto@rotulostrujillo.com</span>
                     <span class="contact__social"> @facebook</span>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1312796729426!2d-99.1660111247863!3d19.40673298186717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff37ee41efdb%3A0x8406267f7bcae63e!2sR%C3%B3tulos%20Trujillo!5e0!3m2!1ses-419!2smx!4v1742962354263!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1312796729426!2d-99.1660111247863!3d19.40673298186717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff37ee41efdb%3A0x8406267f7bcae63e!2sR%C3%B3tulos%20Trujillo!5e0!3m2!1ses-419!2smx!4v1742962354263!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact__form">
                     <form action="" enctype="multipart/form-data" method="post">
                         <label for="nombre">Nombre:</label>
-                        <input id="nombre" type="text" required aria-required="true" placeholder="Ejemp. John" aria-placeholder="Ejemplo: Juan Alberto" name="nombre" tabindex="1">
+                        <input id="nombre" type="text" required aria-required="true" placeholder="Ejemp. John" aria-placeholder="Ejemplo: Juan Alberto" name="nombre">
                         <label for="apellido">Apellido:</label>
-                        <input id="apellido" type="text" required aria-required="true" placeholder="Ejemp. Pérez" aria-placeholder="Ejemplo: Lopez Pérez" name="apellido" tabindex="2">
+                        <input id="apellido" type="text" required aria-required="true" placeholder="Ejemp. Pérez" aria-placeholder="Ejemplo: Lopez Pérez" name="apellido">
                         <label for="correo">Correo electrónico:</label>
-                        <input id="correo" type="email" required aria-required="true" placeholder="Ejemp. contacto@dominio.com" aria-placeholder="Ejemplo: contacto@dominio.com" name="correo" tabindex="3">
+                        <input id="correo" type="email" required aria-required="true" placeholder="Ejemp. contacto@dominio.com" aria-placeholder="Ejemplo: contacto@dominio.com" name="correo">
                         <label for="telefono">Número telefónico:</label>
-                        <input id="telefono" type="tel" max="10" min="10" required aria-required="true" placeholder="Ejemp. +52 33-333-333" aria-placeholder="Ejemplo +52 33-333-333" name="telefono" tabindex="4">
+                        <input id="telefono" type="tel" max="10" min="10" required aria-required="true" placeholder="Ejemp. +52 33-333-333" aria-placeholder="Ejemplo +52 33-333-333" name="telefono">
                         <label for="asunto">Asunto:</label>
-                        <input id="asunto" type="text" required aria-required="true" placeholder="Anota tu motivo del mensaje" aria-placeholder="Anota tu motivo del mensaje" name="asunto" tabindex="5">
+                        <input id="asunto" type="text" required aria-required="true" placeholder="Anota tu motivo del mensaje" aria-placeholder="Anota tu motivo del mensaje" name="asunto">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" id="mensaje" required aria-required="true" placeholder="Anota tu mensaje" aria-placeholder="Anota tu mensaje" tabindex="6"></textarea>
+                        <textarea name="mensaje" id="mensaje" required aria-required="true" placeholder="Anota tu mensaje" aria-placeholder="Anota tu mensaje"></textarea>
                         <button type="submit">Enviar formulario</button>
                     </form>
                 </div>
@@ -420,13 +448,14 @@
             <div class="footer__item">
                 <h3 class="sub-titulo">Ayuda</h3>
                 <div class="footer__icon">
-                    <a href="">Aviso Legal</a>
-                    <a href="">Politica de privacidad</a>
-                    <a href="">Preguntas frecuentes</a>
+                    <a href="aviso_legal/">Aviso Legal</a>
+                    <a href="politica_de_privacidad/">Politica de privacidad</a>
+                    <a href="preguntas_frecuentes/">Preguntas frecuentes</a>
                 </div>
             </div>
         </div>
         <div class="copy"><p class="texto">&copy; 2025 Rotulos Trujillo | Todos los derechos reservados</p></div>
     </footer>
+    <script src="config/js/menu.js"></script>
 </body>
 </html>
