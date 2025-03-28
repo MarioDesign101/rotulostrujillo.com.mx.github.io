@@ -56,8 +56,9 @@
         <!-- <base href="https://www.rotulostrujillo.com.mx/"> -->
     </head>
 <body>
-    <header class="contenedor">
-        <div class="logo">
+    <header>
+        <div class="header__container contenedor">
+                    <div class="logo">
             <a href=""><img src="config/img/rotulos_trujillo_logotipo_medium.png" alt="Rotulos Trujillo | En cada momento clientes satisfechos" loading="lazy"></a>
         </div>
         <div class="icon-menu" id="icon-menu" onclick="toggleMenu();"><i class="fa-solid fa-bars"></i></div>
@@ -80,14 +81,16 @@
                 </li>
             </ul>
         </nav>
+        </div>
     </header>
-    <main class="contenedor">
+    <main>
         <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i> </div>
+         <!-- hasta aquí voy -->
         <section class="home" id="home">
             <div class="banner">
                 <div class="banner__img">
                     <img src="config/img/inicio_small.webp" alt="Rotulos Trujillo - Servicios de impresión de alta calidad" loading="lazy">
-                    <div class="banner__img--txt">
+                    <div class="contenedor banner__img--txt">
                         <h1 class="max-titulo"><span>Rótulos</span> Trujillo</h1>
                         <h2 class="titulo">Impresión de calidad en todos nuestros servicios.</h2>
                         <a href=""><i class="fa-brands fa-whatsapp"></i> Mandanos un mensaje</a>
@@ -96,7 +99,7 @@
             </div>
         </section>
         <!-- hasta aquí voy -->
-        <section class="service" id="service">
+        <section class="contenedor service" id="service">
             <h2 class="titulo">Conoce nuestros servicios.</h2>
             <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, est? Deserunt mollitia aperiam nam, rem aut vero! Libero saepe, dignissimos, laborum tempora accusamus a aliquid labore placeat nam quasi quis.</p>
             <div class="service__contenedor">
@@ -181,72 +184,79 @@
             </div>
         </section>
         <!-- hasta aquí voy -->
-        <section class="gallery" id="gallery">
+         <section class="modal" id="myModal">
+            <div class="exit"><i class="fa-solid fa-xmark"></i></div>
+            <figure>
+                <img src="config/img/service/10/principal.webp" id="imgModal" loading="lazy">
+                <figcaption id="caption"></figcaption>
+            </figure>
+         </section>
+        <section class="contenedor gallery" id="gallery">
             <h2 class="titulo">Conoce algunos de nuestros trabajos</h2>
             <div class="gallery__container">
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/10/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 1</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/9/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 2</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/8/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 3</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/7/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 4</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/6/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 5</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/5/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 6</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/4/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 7</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/3/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 8</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/2/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 9</figcaption>
                     </figure>
                 </div>
                 <div class="gallery--item">
                     <figure>
-                        <img src="" alt="Rotulos Trujillo - trabajo description" loading="lazy">
-                        <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing.</figcaption>
+                        <img src="config/img/service/1/principal.webp" alt="Rotulos Trujillo - trabajo description" loading="lazy" class="thumbnail">
+                        <figcaption>Foto 10</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
-        <section class="aboutUs" id="aboutUs">
+        <section class="contenedor aboutUs" id="aboutUs">
             <h2 class="titulo">¿Por qué elegirnos?</h2>
             <div class="aboutUs__presentation">
                 <div class="presentation__item">
@@ -397,7 +407,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contenedor contact" id="contact">
             <h2 class="titulo">Contactanos</h2>
             <div class="contact__container">
                 <div class="contact__info">
@@ -457,5 +467,6 @@
         <div class="copy"><p class="texto">&copy; 2025 Rotulos Trujillo | Todos los derechos reservados</p></div>
     </footer>
     <script src="config/js/menu.js"></script>
+    <script src="config/js/modal.js"></script>
 </body>
 </html>
