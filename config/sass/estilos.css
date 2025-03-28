@@ -15,7 +15,7 @@
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  border: 1px solid #fff200;
+  border: 1px solid #e9df22;
   background-color: #000000;
   z-index: 400;
   top: 10px;
@@ -27,7 +27,7 @@
   transition: background-color 0.3s;
 }
 .modal .exit i {
-  color: #fff200;
+  color: #e9df22;
   font-size: 1rem;
 }
 .modal .exit:hover {
@@ -455,6 +455,7 @@ header .header__container .menu .menu__list .menu__item a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .gallery .gallery__container .gallery--item figure {
   height: 100%;
@@ -484,4 +485,144 @@ header .header__container .menu .menu__list .menu__item a:hover {
 }
 .gallery .gallery__container .gallery--item:nth-child(10) {
   grid-column-start: span 3;
+}
+
+.aboutUs {
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+.aboutUs .titulo {
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.aboutUs .titulo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #cc0066;
+  height: 2px;
+  width: 43%;
+  border-radius: 20px;
+}
+.aboutUs .aboutUs__presentation {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.aboutUs .aboutUs__presentation .presentation__item {
+  width: 100%;
+  height: 100%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-content: center;
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--img {
+  width: 100%;
+  height: 300px;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--img img {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--txt {
+  width: 100%;
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--txt .sub-titulo {
+  margin-bottom: 7px;
+  letter-spacing: 2px;
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--txt .texto {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.aboutUs .aboutUs__video {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+.aboutUs .aboutUs__video .video {
+  order: 2;
+  width: 100%;
+  height: 200px;
+}
+.aboutUs .aboutUs__video .video video {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.aboutUs .aboutUs__video .aboutUs__video--txt {
+  order: 1;
+}
+.aboutUs .aboutUs__video .aboutUs__video--txt .sub-titulo {
+  margin-bottom: 7px;
+  letter-spacing: 2px;
+}
+.aboutUs .aboutUs__video .aboutUs__video--txt .texto {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.aboutUs .aboutUs__opinions {
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 10px 0;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--img {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+  width: 100%;
+  padding: 7px;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  max-width: 200px;
+  margin: auto;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt {
+  padding-top: 7px;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .sub-titulo {
+  margin-bottom: 7px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .texto {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .slider__item--calification {
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .slider__item--calification span {
+  color: #e9df22;
 }/*# sourceMappingURL=estilos.css.map */
