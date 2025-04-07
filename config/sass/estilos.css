@@ -473,6 +473,11 @@ header .header__container .menu .menu__list .menu__item a:hover {
 .gallery .gallery__container .gallery--item figure .thumbnail {
   width: 100%;
   height: 100%;
+  transition: filter 0.3s;
+  filter: grayscale(1);
+}
+.gallery .gallery__container .gallery--item figure .thumbnail:hover {
+  filter: grayscale(0);
 }
 .gallery .gallery__container .gallery--item:nth-child(4) {
   grid-column-start: span 2;
@@ -547,6 +552,22 @@ header .header__container .menu .menu__list .menu__item a:hover {
   font-size: 1.1rem;
   line-height: 25px;
 }
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--txt a {
+  display: block;
+  width: 150px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: 10px 5px;
+  text-align: center;
+  background-color: #e9df22;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.aboutUs .aboutUs__presentation .presentation__item .presentation__item--txt a:hover {
+  background-color: rgba(233, 223, 34, 0.6666666667);
+}
 .aboutUs .aboutUs__video {
   width: 100%;
   height: auto;
@@ -585,44 +606,222 @@ header .header__container .menu .menu__list .menu__item a:hover {
   margin: auto;
   height: auto;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item {
-  width: 90%;
+.aboutUs .aboutUs__opinions .slider {
+  width: 100%;
+  margin: auto;
+}
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item {
+  pointer-events: none;
   height: auto;
   margin: auto;
   padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--img {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--img {
   width: 100%;
   padding: 7px;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--img img {
-  width: 100%;
-  height: 200px;
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--img img {
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
-  max-width: 200px;
+  padding-bottom: 10px;
   margin: auto;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt {
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--txt {
   padding-top: 7px;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .sub-titulo {
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--txt .sub-titulo {
   margin-bottom: 7px;
   letter-spacing: 2px;
   text-align: center;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .texto {
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--txt .texto {
   font-size: 1.1rem;
   line-height: 25px;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .slider__item--calification {
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--txt .slider__item--calification {
   margin: auto;
   margin-top: 10px;
   width: 100%;
   text-align: center;
 }
-.aboutUs .aboutUs__opinions .opinions__container .opinions__slider .slider__item .slider__item--txt .slider__item--calification span {
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .carousel-item .slider__item--txt .slider__item--calification span {
   color: #e9df22;
+}
+.aboutUs .aboutUs__opinions .slider .slider_container .carousel .item-show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.contact {
+  width: 100%;
+  margin: 20px auto;
+  padding: 8px;
+}
+.contact .titulo {
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.contact .titulo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #cc0066;
+  height: 2px;
+  width: 43%;
+  border-radius: 20px;
+}
+.contact .contact__container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.contact .contact__container .contact__info {
+  width: 100%;
+  margin: auto;
+}
+.contact .contact__container .contact__info .sub-titulo {
+  letter-spacing: 3px;
+  margin-bottom: 7px;
+}
+.contact .contact__container .contact__info .texto {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.contact .contact__container .contact__info .contact__social {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact .contact__container .contact__info .contact__social i {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.contact .contact__container .contact__info iframe {
+  border: none;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.1333333333);
+}
+.contact .contact__container .contact__form {
+  width: 100%;
+  margin: auto;
+}
+.contact .contact__container .contact__form form {
+  width: 100%;
+  margin: auto;
+}
+.contact .contact__container .contact__form form input, .contact .contact__container .contact__form form label {
+  display: block;
+  width: 95%;
+}
+.contact .contact__container .contact__form form label {
+  margin: 15px 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.contact .contact__container .contact__form form input, .contact .contact__container .contact__form form textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d02323;
+  padding: 4px 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  field-sizing: content;
+}
+.contact .contact__container .contact__form form input::-moz-placeholder, .contact .contact__container .contact__form form textarea::-moz-placeholder {
+  font-family: sans-serif;
+}
+.contact .contact__container .contact__form form input::placeholder, .contact .contact__container .contact__form form textarea::placeholder {
+  font-family: sans-serif;
+}
+.contact .contact__container .contact__form form input:focus, .contact .contact__container .contact__form form input:valid, .contact .contact__container .contact__form form textarea:focus, .contact .contact__container .contact__form form textarea:valid {
+  border-bottom: 1px solid #000000;
+}
+.contact .contact__container .contact__form form button {
+  width: 200px;
+  margin: 10px auto;
+  padding: 5px;
+  font-family: sans-serif;
+  display: block;
+  text-align: center;
+  background-color: #cc0066;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+}
+.contact .contact__container .contact__form form button:hover {
+  background-color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  background-color: #cc0066;
+  color: #ffffff;
+}
+footer .footer__container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 7px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  gap: 15px;
+}
+footer .footer__container .footer__item {
+  flex-basis: 100%;
+  text-align: center;
+}
+footer .footer__container .footer__item .sub-titulo {
+  margin-bottom: 10px;
+}
+footer .footer__container .footer__item .texto {
+  line-height: 25px;
+  font-size: 1.1rem;
+}
+footer .footer__container .footer__item .footer__icon {
+  width: 100%;
+}
+footer .footer__container .footer__item .footer__icon span {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+footer .footer__container .footer__item .footer__icon span i {
+  margin-right: 4px;
+}
+footer .footer__container .footer__item .footer__icon a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+footer .copy {
+  background-color: #880245;
+  padding: 3px 5px;
+  text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
