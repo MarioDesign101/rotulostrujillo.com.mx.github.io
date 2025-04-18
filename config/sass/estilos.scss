@@ -482,7 +482,7 @@ header {
                 figcaption {
                     position: absolute;
                     bottom: 0;
-                    padding-left: 3px;
+                    padding: 3px;
                     color: $color__blanco;
                     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9));
                     width: 100%;
@@ -508,6 +508,28 @@ header {
             }
             &:nth-child(10) {
                 grid-column-start: span 3;
+            }
+            &:nth-child(12) {
+                grid-column-start: span 2;
+            }
+            &:nth-child(13) {
+                grid-column-start: span 2;
+            }
+            &:nth-child(15) {
+                grid-row-start: span 2;
+            }
+            &:nth-child(16) {
+                grid-row-start: span 2;
+            }
+            &:nth-child(20) {
+                grid-column-start: span 2;
+            }
+            &:nth-child(22) {
+                grid-column-start: span 2;
+            }
+            &:nth-child(23) {
+                grid-column-start: span 2;
+                grid-row-start: span 2;
             }
         }
     }
@@ -657,9 +679,24 @@ header {
                         .slider__item--txt {
                             padding-top: 7px;
                             .sub-titulo {
-                                margin-bottom: 7px;
+                                margin-bottom: 13px;
                                 letter-spacing: 2px;
                                 text-align: center;
+                                color: $color__rosa;
+                                position: relative;
+                                padding: 7px 0;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    margin: auto;
+                                    width: 50px;
+                                    border-radius: 10px;
+                                    box-shadow: 0px 0px 10px 5px #cc006689;
+                                }
                             }
                             .texto {
                                 font-size: 1.1rem;
