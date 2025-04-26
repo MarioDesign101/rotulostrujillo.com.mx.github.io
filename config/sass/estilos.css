@@ -865,6 +865,7 @@ footer .copy {
 @media screen and (min-width: 480px) {
   .service .service__contenedor {
     padding-top: 20px;
+    align-items: start;
   }
   .service .service__contenedor .service--item {
     width: 40%;
