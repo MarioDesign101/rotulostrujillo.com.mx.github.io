@@ -1042,7 +1042,7 @@ footer .copy {
   header .header__container .menu .menu__list .menu__item a {
     color: #ffffff;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: bold;
     display: block;
     width: 130px;
     margin: auto;
