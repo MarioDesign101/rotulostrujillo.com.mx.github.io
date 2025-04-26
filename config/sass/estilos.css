@@ -873,8 +873,8 @@ footer .copy {
     padding: 5px;
   }
   .service .service__contenedor .service--item img {
-    width: 130px;
-    height: 130px;
+    width: 160px;
+    height: 160px;
   }
   .service .service__contenedor .service--item:nth-child(2n+1) {
     border-right: 1px solid rgba(0, 0, 0, 0.1333333333);
@@ -915,8 +915,8 @@ footer .copy {
     border-right: none;
   }
   .service .service__contenedor .service--item img {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
   }
   .service .service__contenedor .service--item:nth-child(2n+1) {
     border-left: 1px solid rgba(0, 0, 0, 0.1333333333);
@@ -1047,5 +1047,10 @@ footer .copy {
   }
   header .header__container .menu .menu__list .menu__item a:hover {
     border-bottom: 1px solid #cc0066;
+  }
+  .service .service__contenedor .service--item img {
+    width: 260px;
+    height: 260px;
+    border-radius: 40px;
   }
 }/*# sourceMappingURL=estilos.css.map */
